@@ -1,8 +1,6 @@
-// src/components/HeroSection.jsx
-
 import React from 'react';
 
-// Import your images
+// --- Using the local images you provided ---
 import leafIcon from '../../assets/images/icons/leaf.svg';
 import bedroomImg from '../../assets/images/Home/Hero/image1.png';
 import paddleboardImg from '../../assets/images/Home/Hero/image2.png';
@@ -11,73 +9,81 @@ import poolWomanImg from '../../assets/images/Home/Hero/image4.png';
 import beachChairsImg from '../../assets/images/Home/Hero/image5.png';
 import aerialIslandsImg from '../../assets/images/Home/Hero/image6.png';
 
-// Reusable Image component with hover effect
-const CollageImage = ({ src, alt, className }) => (
-    <div className={`absolute overflow-hidden ${className}`}>
-        <img
-            src={src}
-            alt={alt}
-            className="w-full h-full object-cover" // Removed all hover and transition effects
-        />
-    </div>
+// --- Helper component for the down arrow icon ---
+const ArrowDownIcon = () => (
+    <svg className="w-6 h-6 mx-auto text-black" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 20.25m0 0L4.5 13.5M12 20.25V3.75" />
+    </svg>
 );
 
+// --- Main Hero Component ---
 const HeroSection = () => {
     return (
-        // Changed to h-screen to better control viewport height
-        <section className="relative w-full h-screen flex items-center justify-center font-[var(--font-sans)]">
-            <div className="relative w-full max-w-[1440px] h-full mx-auto">
+        <section className="bg-[#FAF6ED] w-full font-sans flex items-center justify-center p-4 sm:p-6 lg:p-8">
+            <div className="w-full max-w-7xl mx-auto">
 
-                {/* --- Desktop Collage Container --- */}
-                <div className="hidden lg:block">
-                    {/* Top-left image (Bedroom) */}
-                    <CollageImage src={bedroomImg} alt="Luxury resort bedroom"
-                        className="w-[380px] h-[253px] top-[15%] left-[5%]" />
-
-                    {/* Middle-left image (Paddleboard) */}
-                    <CollageImage src={paddleboardImg} alt="Person on a paddleboard"
-                        className="w-[180px] h-[180px] top-[30%] left-[-4%] z-10" />
-
-                    {/* Bottom-left image (Boardwalk) */}
-                    <CollageImage src={boardwalkImg} alt="Boardwalk at sunset"
-                        className="w-[450px] h-[300px] top-[60%] left-[0%]" />
-
-                    {/* Top-right image (Woman in Pool) */}
-                    <CollageImage src={poolWomanImg} alt="Woman relaxing in an infinity pool"
-                        className="w-[420px] h-[280px] top-[18%] right-[5%]" />
-
-                    {/* Middle-right image (Beach Chairs) */}
-                    <CollageImage src={beachChairsImg} alt="Beach chairs and umbrella"
-                        className="w-[160px] h-[160px] top-[55%] right-[5%] " />
-
-                    {/* Bottom-right image (Aerial Islands) */}
-                    <CollageImage src={aerialIslandsImg} alt="Aerial view of islands"
-                        className="w-[300px] h-[200px] top-[68%] right-[10%] z-10" />
-                </div>
-
-                {/* --- Central Text Content --- */}
-                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center">
-                    <img src={leafIcon} alt="Decorative leaf" className="w-24 h-auto mb-4" />
-                    <h1 className="font-[var(--font-serif)] text-7xl text-[var(--color-brand-dark)] leading-snug font-normal">
-                        Let the Ocean
-                        <br />
-                        Slow You Down
-                    </h1>
-                    <p className="mt-6 text-lg text-[var(--color-text-subtle)] font-light">
-                        For the ultimate getaway
-                    </p>
-                    <div className="mt-8">
-                        <svg className="mx-auto w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                        </svg>
+                {/* ------------------ Mobile Layout (Visible on screens smaller than lg) ------------------ */}
+                {/* A simple stacked layout for the best mobile experience */}
+                <div className="lg:hidden">
+                    <div className="text-center text-black mb-8">
+                        <h1 className="text-5xl/tight font-thin">Let the Ocean</h1>
+                        <h2 className="text-5xl/tight font-thin">Slow You Down</h2>
+                        <p className="mt-6 text-base">For the ultimate getaway</p>
+                        <div className="mt-4">
+                            <ArrowDownIcon />
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                        <img src={paddleboardImg} alt="Person on paddleboard" className="rounded-lg w-full h-full object-cover" />
+                        <img src={bedroomImg} alt="Bedroom with ocean view" className="rounded-lg w-full h-full object-cover" />
+                        <img src={poolWomanImg} alt="Woman by the pool" className="rounded-lg w-full h-full object-cover" />
+                        <img src={boardwalkImg} alt="Boardwalk at sunset" className="rounded-lg w-full h-full object-cover" />
+                        <img src={beachChairsImg} alt="Beach chairs and umbrella" className="rounded-lg w-full h-full object-cover" />
+                        <img src={aerialIslandsImg} alt="Aerial view of islands" className="rounded-lg w-full h-full object-cover" />
                     </div>
                 </div>
 
-                {/* --- Mobile-Only Image Stack --- */}
-                <div className="lg:hidden mt-16 flex flex-col items-center gap-8 px-4">
-                    <img src={bedroomImg} alt="Luxury resort bedroom" className="w-full max-w-sm" />
-                    <img src={poolWomanImg} alt="Woman by pool" className="w-full max-w-sm" />
-                    <img src={boardwalkImg} alt="Boardwalk at sunset" className="w-full max-w-sm" />
+                {/* ------------------ Desktop Layout (Visible on lg screens and up) ------------------ */}
+                {/* A 3-column, 2-row grid with overlaid text */}
+                <div className="hidden lg:block relative">
+
+                    {/* Centered Text - Placed on top of the image grid using absolute positioning */}
+                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-black pointer-events-none">
+                        <img src={leafIcon} alt="Palm leaf icon" className="w-16 h-16" />
+                        <h1 className="text-7xl font-thin tracking-wide leading-tight mt-4">Let the Ocean</h1>
+                        <h2 className="text-7xl font-thin tracking-wide leading-tight">Slow You Down</h2>
+                        <p className="mt-8 text-lg">For the ultimate getaway</p>
+                        <div className="mt-6">
+                            <ArrowDownIcon />
+                        </div>
+                    </div>
+
+                    {/* Image Grid - The 3x2 grid structure */}
+                    <div className="grid grid-cols-3 grid-rows-2 gap-2 auto-rows-[250px]">
+                        {/* Row 1 */}
+                        <div className="rounded-lg overflow-hidden">
+                            <div className='relative h-[350px]  '>
+                                <img src={bedroomImg} alt="Person on paddleboard" className="absolute md:w-[350px] md:right-0 md:h-[230px] w-full h-full object-cover" />
+                                <img src={paddleboardImg} alt="Person on paddleboard" className="absolute md:w-[150px] left-[0] top-30 md:h-[180px] w-full h-full object-cover" />
+                            </div>
+                        </div>
+                        <div className="rounded-lg overflow-hidden">
+                        </div>
+                        <div className="rounded-lg overflow-hidden">
+                            <img src={poolWomanImg} alt="Woman by the pool" className="w-full h-full object-cover" />
+                        </div>
+
+                        {/* Row 2 */}
+                        <div className="rounded-lg overflow-hidden">
+                            <img src={boardwalkImg} alt="Boardwalk at sunset" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="rounded-lg overflow-hidden">
+                        </div>
+                        <div className="rounded-lg overflow-hidden">
+                            <img src={aerialIslandsImg} alt="Aerial view of islands" className="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

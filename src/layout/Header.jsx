@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-cream font-sans sticky top-0 z-50">
+    <header className="bg-cream font-sans relative top-0 z-50">
       <div className="container mx-auto px-4">
         {/* Top Bar: Hamburger, Logo, Book Now */}
         <div className="relative flex h-24 items-center justify-between">
