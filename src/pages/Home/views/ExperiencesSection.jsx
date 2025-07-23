@@ -30,7 +30,7 @@ const ExperiencesSection = () => {
         src={bgPalm}
         alt=""
         aria-hidden="true"
-        className="absolute top-[80%] right-[30%] md:top-80 md:bottom-0 md:right-12 w-[200px] md:w-[25%] opacity-80 pointer-events-none select-none -mr-25 -mb-24"
+        className="absolute top-[80%] right-[30%] md:top-[50%] 2xl:top-80 md:bottom-0 md:right-20 2xl:right-12 w-[200px] md:w-[250px] 2xl:w-[25%] opacity-80 pointer-events-none select-none -mr-25 -mb-24"
       />
 
       <div className="mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

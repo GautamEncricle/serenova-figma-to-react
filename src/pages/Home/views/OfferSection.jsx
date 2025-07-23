@@ -18,7 +18,7 @@ const OfferSection = () => {
       }}
     >
       <div
-        className="absolute top-10 right-0 md:-right-8 w-48 md:w-60 h-48 md:h-60 bg-no-repeat bg-contain opacity-100 z-0"
+        className="absolute top-0 right-0 md:-right-8 w-48 md:w-60 h-48 md:h-60 bg-no-repeat bg-contain opacity-100 z-0"
         style={{ backgroundImage: "var(--leaf-bg-url)" }}
       ></div>
       <div

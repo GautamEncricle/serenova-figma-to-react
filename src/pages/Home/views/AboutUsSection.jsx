@@ -17,9 +17,9 @@ const AboutUsSection = () => {
         alt="leaf background"
         aria-hidden="true"
         className="absolute top-0 right-0 w-[60%] max-w-xs -mr-16 opacity-70 pointer-events-none select-none z-0 
-                           md:w-[50%] md:max-w-md md:-mr-20
+                           md:w-[450px] md:max-w-md md:-mr-20
                            // Desktop (YOUR ORIGINAL STYLES): Reverts to your precise positioning and size.
-                           lg:top-12 lg:w-[45%] lg:max-w-xl lg:-mr-24 lg:-mt-4"
+                           lg:top-22 lg:w-[500px] lg:max-w-xl lg:-mr-24 lg:-mt-4"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-28 relative z-10">
