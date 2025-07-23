@@ -1,15 +1,15 @@
 //service images
-import PalmTreeIcon from "../assets/images/icons/services/personalize.svg";
-import BeachChairIcon from "../assets/images/icons/services/privacy.svg";
-import CoconutDrinkIcon from "../assets/images/icons/services/luxury.svg";
+import PalmTreeIcon from "../assets/images/icons/services/personalize.svg?url";
+import BeachChairIcon from "../assets/images/icons/services/privacy.svg?url";
+import CoconutDrinkIcon from "../assets/images/icons/services/luxury.svg?url";
 
 //brands images
-import brandLogo1 from "../assets/images/Home/brand/image1.svg";
-import brandLogo2 from "../assets/images/Home/brand/image2.svg";
-import brandLogo3 from "../assets/images/Home/brand/image3.svg";
-import brandLogo4 from "../assets/images/Home/brand/image4.svg";
-import brandLogo5 from "../assets/images/Home/brand/image5.svg";
-import brandLogo6 from "../assets/images/Home/brand/image6.svg";
+import brandLogo1 from "../assets/images/Home/brand/image1.svg?url";
+import brandLogo2 from "../assets/images/Home/brand/image2.svg?url";
+import brandLogo3 from "../assets/images/Home/brand/image3.svg?url";
+import brandLogo4 from "../assets/images/Home/brand/image4.svg?url";
+import brandLogo5 from "../assets/images/Home/brand/image5.svg?url";
+import brandLogo6 from "../assets/images/Home/brand/image6.svg?url";
 
 //tours images
 
