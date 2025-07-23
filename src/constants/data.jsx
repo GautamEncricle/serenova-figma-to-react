@@ -24,7 +24,7 @@ const navLinks = [
   { title: "Home", url: "#home", active: true },
   { title: "About Us", url: "#about" },
   { title: "Accommodation", url: "#accommodation" },
-  { title: "Offers & Packages", url: "#offers" },
+  { title: "Offers & Packages", url: "#offers" }, 
   { title: "Wellness & Spa", url: "#spa" },
   { title: "Events", url: "#events" },
   { title: "Facilities", url: "#facilities" },
