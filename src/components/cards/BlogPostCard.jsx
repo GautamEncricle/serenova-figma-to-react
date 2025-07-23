@@ -13,11 +13,7 @@ const BlogPostCard = ({ post }) => {
 
                 {/* The Image */}
                 <div className="relative overflow-hidden">
-                    <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-56 object-cover"
-                    />
+                   {post.image}
                 </div>
             </div>
 

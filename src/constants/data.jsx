@@ -20,6 +20,13 @@ import tourImage4 from "../assets/images/Home/tours/image4.png";
 import tourImage5 from "../assets/images/Home/tours/image5.png";
 import tourImage6 from "../assets/images/Home/tours/image6.png";
 
+//blog images
+
+import blogImage1 from '../assets/images/Home/blog/image1.png';
+import blogImage2 from '../assets/images/Home/blog/image2.png';
+import blogImage3 from '../assets/images/Home/blog/image3.png';
+import blogImage4 from '../assets/images/Home/blog/image4.png';
+
 const navLinks = [
   { title: "Home", url: "#home", active: true },
   { title: "About Us", url: "#about" },
@@ -72,28 +79,28 @@ const experiences = [
 
 const blogPosts = [
   {
-    image: "../../../assets/images/Home/blog/image1.png",
+    image: <img src={blogImage1} alt="Blog image" className="w-full h-56 object-cover" />,
     category: "Nature & Stillness",
     title: "5 Simple Rituals to Embrace Slow Living on Vacation",
     date: "July 7, 2025",
     comments: 3,
   },
   {
-    image: "../../../assets/images/Home/blog/image2.png",
+    image: <img src={blogImage2} alt="Blog image" className="w-full h-56 object-cover" />,
     category: "Coastal Escapes",
     title: "Explore top green destinations in the world",
     date: "June 8, 2025",
     comments: 2,
   },
   {
-    image: "../../../assets/images/Home/blog/image3.png",
+    image: <img src={blogImage3} alt="Blog image" className="w-full h-56 object-cover" />,
     category: "Design & Atmosphere",
     title: "Top 15 best travel blogs to follow in 2025",
     date: "May 2, 2025",
     comments: 4,
   },
   {
-    image: "../../../assets/images/Home/blog/image4.png",
+    image: <img src={blogImage4} alt="Blog image" className="w-full h-56 object-cover" />,
     category: "Wellness & Retreats",
     title: "Amazing photos of rare and exotic plants in Africa",
     date: "May 5, 2025",
