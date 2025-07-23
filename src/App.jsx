@@ -5,6 +5,11 @@ import AboutUsSection from "./sections/Home/AboutUsSection"
 import ExperiencesSection from "./sections/Home/ExperiencesSection"
 import BrandsSection from "./sections/Home/BrandSection"
 import CuratedToursSection from "./sections/Home/CuratedToursSection"
+import OfferSection from "./sections/Home/OfferSection"
+import LuxurySection from "./sections/Home/LuxurySection"
+import TestimonialsSection from "./sections/Home/TestimonialsSection"
+import BlogSection from "./sections/Home/BlogSection"
+import Footer from "./layout/Footer"
 
 function App() {
   return (
@@ -16,6 +21,11 @@ function App() {
       <ExperiencesSection />
       <BrandsSection />
       <CuratedToursSection />
+      <OfferSection />
+      <LuxurySection />
+      <TestimonialsSection />
+      <BlogSection />
+      <Footer />
     </>
   )
 }

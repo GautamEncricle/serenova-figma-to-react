@@ -9,17 +9,17 @@
 
 /* 3. Define all your custom theme properties as CSS Variables */
 :root {
-  --color-cream: #fdfaf3;
+  --color-cream: #fffaed;
   --color-header-primary: #5D6142;
-  --color-header-secondary: #8B7748;
+  --color-dark-brown: #8B7748;
   --color-text-dark: #3D402D;
   --color-text-subtle: #4a5568;
-  --color-black: #000000;
+  --color-text-dark-green: #4e5330;
+  --color-text-cream: #d6cbaf;
 
   --color-brand-accent: #a18a58;
 
   /* Font Families */
-  --font-serif: 'Playfair Display', serif;
   --font-sans: 'Poppins', sans-serif;
   --font-teachers: 'Teachers', sans-serif;
 }
@@ -33,4 +33,31 @@
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+.rfm-marquee-container {
+  overflow: hidden !important;
+}
+
+.bg-light {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@theme {
+  /* Colors */
+  --color-cream: #fffaed;
+  --color-cream-dark: #d6cbaf;
+  --color-cream-medium: #fcf2dc;
+  --color-header-primary: #5D6142;
+  --color-dark-brown: #8B7748;
+  --color-brand-accent: #a18a58;
+  --color-dark: #3D402D;
+  --color-dark-green: #4e5330;
+  --color-dark-blue: #21313a;
+  --color-subtle: #4a5568;
+  --color-gray: #9b9b98;
+
+  /* Font Families */
+  --font-sans: 'Poppins', sans-serif;
+  --font-teacher: 'Teachers', sans-serif;
 }

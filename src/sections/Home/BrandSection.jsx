@@ -1,12 +1,14 @@
 import React from 'react';
 
 // TODO: Replace these placeholder paths with your actual logo images
-import brandLogo1 from '../../assets/images/Home/Brand/image1.svg';
-import brandLogo2 from '../../assets/images/Home/Brand/image2.svg';
-import brandLogo3 from '../../assets/images/Home/Brand/image3.svg';
-import brandLogo4 from '../../assets/images/Home/Brand/image4.svg';
-import brandLogo5 from '../../assets/images/Home/Brand/image5.svg';
-import brandLogo6 from '../../assets/images/Home/Brand/image6.svg';
+import brandLogo1 from '../../assets/images/Home/brand/image1.svg';
+import brandLogo2 from '../../assets/images/Home/brand/image2.svg';
+import brandLogo3 from '../../assets/images/Home/brand/image3.svg';
+import brandLogo4 from '../../assets/images/Home/brand/image4.svg';
+import brandLogo5 from '../../assets/images/Home/brand/image5.svg';
+import brandLogo6 from '../../assets/images/Home/brand/image6.svg';
+
+import dust from '../../assets/images/icons/Dust.svg'
 
 
 const BrandsSection = () => {
@@ -22,7 +24,8 @@ const BrandsSection = () => {
 
     return (
         // The main container for the section.
-        <div className="">
+        <div style={{ backgroundImage: `url(${dust})` }}
+                    className="bg-no-repeat bg-cover bg-center bg-cream-medium">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="flex items-center justify-center lg:justify-between gap-10 md:gap-12 lg:gap-16 overflow-x-auto no-scrollbar pb-4">

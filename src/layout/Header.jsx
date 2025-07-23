@@ -20,10 +20,8 @@ const Header = () => {
   return (
     <header className="bg-cream font-sans relative top-0 z-50">
       <div className="container mx-auto px-4">
-        {/* Top Bar: Hamburger, Logo, Book Now */}
-        <div className="relative flex h-24 items-center justify-between">
+        <div className="relative flex h-30 items-center justify-between">
 
-          {/* Mobile Menu Button (Hamburger) */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsNavOpen(!isNavOpen)}
@@ -37,31 +35,28 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Logo (Centered) */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
             <a href="#home" aria-label="Back to homepage">
-              <img src={Logo} alt="Tropical Resort Logo" className="h-20 w-auto" />
+              <img src={Logo} alt="Tropical Resort Logo" className="h-25 w-auto" />
             </a>
           </div>
 
-          {/* Book Now Button */}
-          <div className="flex items-center">
-            <button className="hidden lg:block border border-brand-gold px-6 py-2 text-sm font-bold text-brand-brown transition hover:bg-brand-gold hover:text-white ">
+          <div className="flex items-center right-0 absolute">
+            <button className="hidden lg:block bg-transparent p-2 border border-brand-accent text-brand-accent hover:bg-stone-700 hover:text-white transition-colors duration-300">
               BOOK NOW
             </button>
           </div>
         </div>
       </div>
 
-      {/* --- Main Navigation Menu --- */}
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex justify-center border-t border-dashed border-brand-gold py-4">
+      <nav className="hidden lg:flex justify-center border-brand-gold py-4">
         <ul className="flex items-center space-x-8">
           {navLinks.map((link) => (
             <li key={link.title}>
               <a
                 href={link.url}
-                className={`pb-2 text-gray-700 transition hover:text-black hover:border-b-2 hover:border-brand-gold ${link.active ? 'text-black border-b-2 border-brand-gold' : ''}`}
+                className={`pb-2 text-gray-700 transition hover:text-black hover:border-b-2 hover:border-brand-gold ${link.active ? 'text-dark-brown font-medium border-b-2 border-brand-gold' : ''}`}
               >
                 {link.title}
               </a>
@@ -71,22 +66,21 @@ const Header = () => {
       </nav>
 
       {/* Mobile Navigation */}
-      <nav className={`lg:hidden ${isNavOpen ? 'block' : 'hidden'} border-t border-dashed border-brand-gold py-4`}>
+      <nav className={`lg:hidden ${isNavOpen ? 'block' : 'hidden'} py-4`}>
         <ul className="flex flex-col items-center space-y-4">
           {navLinks.map((link) => (
             <li key={link.title}>
               <a
                 href={link.url}
-                onClick={() => setIsNavOpen(false)} // Close menu on click
+                onClick={() => setIsNavOpen(false)}
                 className={`pb-2 text-gray-700 transition hover:text-black ${link.active ? 'text-black' : ''}`}
               >
                 {link.title}
               </a>
             </li>
           ))}
-          {/* Show Book Now button inside mobile menu */}
           <li>
-            <button className="mt-4 border border-brand-gold px-10 py-2 text-sm font-bold text-brand-brown transition hover:bg-brand-gold hover:text-white">
+            <button className="bg-transparent p-2 border border-brand-accent text-brand-accent hover:bg-stone-700 hover:text-white transition-colors duration-300">
               BOOK NOW
             </button>
           </li>
