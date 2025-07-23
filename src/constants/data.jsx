@@ -24,7 +24,7 @@ const navLinks = [
   { title: "Home", url: "#home", active: true },
   { title: "About Us", url: "#about" },
   { title: "Accommodation", url: "#accommodation" },
-  { title: "Offers & Packages", url: "#offers" }, 
+  { title: "Offers & Packages", url: "#offers" },
   { title: "Wellness & Spa", url: "#spa" },
   { title: "Events", url: "#events" },
   { title: "Facilities", url: "#facilities" },
@@ -72,28 +72,28 @@ const experiences = [
 
 const blogPosts = [
   {
-    image: "./src/assets/images/Home/blog/image1.png",
+    image: "../../../assets/images/Home/blog/image1.png",
     category: "Nature & Stillness",
     title: "5 Simple Rituals to Embrace Slow Living on Vacation",
     date: "July 7, 2025",
     comments: 3,
   },
   {
-    image: "./src/assets/images/Home/blog/image2.png",
+    image: "../../../assets/images/Home/blog/image2.png",
     category: "Coastal Escapes",
     title: "Explore top green destinations in the world",
     date: "June 8, 2025",
     comments: 2,
   },
   {
-    image: "./src/assets/images/Home/blog/image3.png",
+    image: "../../../assets/images/Home/blog/image3.png",
     category: "Design & Atmosphere",
     title: "Top 15 best travel blogs to follow in 2025",
     date: "May 2, 2025",
     comments: 4,
   },
   {
-    image: "./src/assets/images/Home/blog/image4.png",
+    image: "../../../assets/images/Home/blog/image4.png",
     category: "Wellness & Retreats",
     title: "Amazing photos of rare and exotic plants in Africa",
     date: "May 5, 2025",
@@ -209,4 +209,4 @@ const testimonials = [
   },
 ];
 
-export {navLinks, services, experiences, blogPosts, logos, toursData, testimonials };
+export { navLinks, services, experiences, blogPosts, logos, toursData, testimonials };
