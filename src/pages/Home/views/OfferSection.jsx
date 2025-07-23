@@ -57,10 +57,7 @@ const OfferSection = () => {
             give you more. More stillness. More time. More unforgettable
             experiences.
           </p>
-          {/* <button className="mt-8 bg-transparent p-2 border border-brand-accent text-brand-accent cursor-pointer hover:bg-stone-700 hover:text-white transition-colors duration-300 translate-x-2/3 md:translate-0">
-            VIEW ALL OFFERS
-          </button> */}
-          <Button buttonText="VIEW ALL OFFERS" className="mt-8 uppercase" />
+          <Button buttonText="VIEW ALL OFFERS" className="mt-8 uppercase translate-x-2/3 md:translate-0" />
         </div>
 
         {/* Image Collage */}

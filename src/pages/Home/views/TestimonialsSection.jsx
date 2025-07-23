@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
   const scroll = (direction) => {
     if (!scrollRef.current) return;
     const isMobile = window.innerWidth <= 768;
-    const offset = isMobile ? 300 : 1120;
+    const offset = isMobile ? 350 : 1120;
     scrollRef.current.scrollBy({
       left: direction === "left" ? -offset : offset,
       behavior: "smooth",
@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
       </div>
 
       {/* Scrollable Cards */}
-      <div className="w-full px-4">
+      <div className="w-full">
         <div
           className="flex flex-nowrap overflow-x-auto no-scrollbar"
           ref={scrollRef}
