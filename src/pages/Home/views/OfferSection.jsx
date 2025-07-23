@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "../../../components/ui/Button";
+
 const leafBg = "./src/assets/images/icons/offers/leafBg.svg";
 const umbrellaBg = "./src/assets/images/icons/offers/umbrellaBg.svg";
 const tree = "./src/assets/images/icons/tree.svg";
@@ -55,9 +57,10 @@ const OfferSection = () => {
             give you more. More stillness. More time. More unforgettable
             experiences.
           </p>
-          <button className="mt-8 bg-transparent p-2 border border-brand-accent text-brand-accent cursor-pointer hover:bg-stone-700 hover:text-white transition-colors duration-300 translate-x-2/3 md:translate-0">
+          {/* <button className="mt-8 bg-transparent p-2 border border-brand-accent text-brand-accent cursor-pointer hover:bg-stone-700 hover:text-white transition-colors duration-300 translate-x-2/3 md:translate-0">
             VIEW ALL OFFERS
-          </button>
+          </button> */}
+          <Button buttonText="VIEW ALL OFFERS" className="mt-8 uppercase" />
         </div>
 
         {/* Image Collage */}

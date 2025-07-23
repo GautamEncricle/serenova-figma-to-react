@@ -4,6 +4,8 @@ import palmLeafBg from "../../../assets/images/icons/palmLeafBg.svg";
 
 import dust from "../../../assets/images/icons/Dust.svg";
 
+import Button from "../../../components/ui/Button";
+
 const AboutUsSection = () => {
   return (
     <section
@@ -49,9 +51,7 @@ const AboutUsSection = () => {
                                     lg:mt-0 lg:flex-row lg:items-end lg:gap-0"
             >
               <div className="w-full text-center lg:w-auto lg:text-left">
-                <button className="px-8 py-3 whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase border border-stone-400 text-stone-600 hover:bg-stone-600 hover:text-white transition-colors duration-300">
-                  Read more
-                </button>
+                <Button buttonText="Read more" className="px-8 py-3 whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase" />
               </div>
 
               <div className="w-full lg:flex-grow lg:pl-12">

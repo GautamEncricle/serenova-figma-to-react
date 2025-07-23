@@ -1,62 +1,10 @@
 import React from "react";
+import Button from "../../../components/ui/Button";
+import ServiceCard from "../../../components/cards/ServiceCard";
 
 import PalmLeaf from "../../../assets/images/icons/tree.svg";
 
 import { services } from "../../../constants/data";
-
-// Reusable Service Card Component
-const ServiceCard = ({ icon, title, description }) => {
-  return (
-    <div className="group relative h-full">
-      {/* Border on hover */}
-      <div
-        className="
-                absolute -inset-1.5
-                border-2 border-brand-accent
-                -left-4 -top-4 bottom-4 right-4
-                opacity-0 group-hover:opacity-100
-                transition-opacity duration-300 z-10
-            "
-      ></div>
-
-      <div className="relative h-full font-teachers border border-gray-300 bg-cream p-8 flex flex-col text-center">
-        <div className="flex-grow">
-          {/* Icon */}
-          <div className="flex justify-center mb-6">{icon}</div>
-
-          <h3 className="text-2xl font-teachers font-medium text-brand-accent font-teachers mb-4 group-hover:text-black transition-colors duration-300">
-            {title}
-          </h3>
-          <p className="text-gray-500 font-sans text-sm leading-relaxed">
-            {description}
-          </p>
-        </div>
-
-        {/* Arrow Button */}
-        <div className="mt-8">
-          <a
-            href="#"
-            className="inline-block text-brand-accent group-hover:text-black"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const ServicesSection = () => {
   return (
@@ -90,12 +38,7 @@ const ServicesSection = () => {
 
         {/* See All Services Button */}
         <div className="mt-16">
-          <a
-            href="#"
-            className="inline-block border border-[var(--color-brand-accent)] px-8 py-3 text-sm font-semibold text-[var(--color-brand-accent)] tracking-widest transition hover:bg-[var(--color-brand-accent)] hover:text-white"
-          >
-            SEE ALL SERVICES
-          </a>
+          <Button buttonText="SEE ALL SERVICES" className="mx-auto uppercase" />
         </div>
       </div>
     </section>

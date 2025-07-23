@@ -20,6 +20,18 @@ import tourImage4 from "../assets/images/Home/tours/image4.png";
 import tourImage5 from "../assets/images/Home/tours/image5.png";
 import tourImage6 from "../assets/images/Home/tours/image6.png";
 
+const navLinks = [
+  { title: "Home", url: "#home", active: true },
+  { title: "About Us", url: "#about" },
+  { title: "Accommodation", url: "#accommodation" },
+  { title: "Offers & Packages", url: "#offers" },
+  { title: "Wellness & Spa", url: "#spa" },
+  { title: "Events", url: "#events" },
+  { title: "Facilities", url: "#facilities" },
+  { title: "Gallery", url: "#gallery" },
+  { title: "Contact Us", url: "#contact" },
+];
+
 const services = [
   {
     icon: <img src={BeachChairIcon} alt="Privacy Icon" className="w-12 h-12" />,
@@ -197,4 +209,4 @@ const testimonials = [
   },
 ];
 
-export { services, experiences, blogPosts, logos, toursData, testimonials };
+export {navLinks, services, experiences, blogPosts, logos, toursData, testimonials };

@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "../../../components/ui/Button";
+import TourCard from "../../../components/cards/TourCard";
 
 import palmIcon from '../../../assets/images/icons/tree.svg';
 
@@ -6,44 +8,6 @@ import bgPalmLeaf from "../../../assets/images/icons/palmLeafBg.svg";
 import dust from "../../../assets/images/icons/Dust.svg";
 
 import { toursData } from "../../../constants/data";
-
-const TourCard = ({ image, title, category, details }) => (
-  <div className="bg-cream rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col">
-    <img src={image} alt={title} className="w-full h-56 object-cover" />
-    <div className="p-6 flex flex-col flex-grow">
-      <h3 className="font-teachers font-400">{title}</h3>
-      <p className="text-sm text-cream-dark font-sans tracking-wide mt-1">
-        {category}
-      </p>
-      <div className="mt-4 pt-4 space-y-3 font-sans text-sm">
-        {details.map((detail, index) =>
-          index === details.length - 1 ? (
-            <div
-              key={index}
-              className="flex justify-between items-center text-stone-600"
-            >
-              <span className="font-sans text-stone-800">{detail.label}</span>
-              <span className="text-cream-dark">{detail.value}</span>
-            </div>
-          ) : (
-            <div
-              key={index}
-              className="flex border-b py-[5px] border-[var(--color-text-cream)] justify-between items-center text-stone-600"
-            >
-              <span className="font-[var(--font-teacher)] text-stone-800">
-                {detail.label}
-              </span>
-              <span className="text-[var(--color-text-cream)]">
-                {detail.value}
-              </span>
-            </div>
-          ),
-        )}
-      </div>
-    </div>
-  </div>
-);
-
 const CuratedToursSection = () => {
   return (
     <section
@@ -66,7 +30,7 @@ const CuratedToursSection = () => {
               alt="Decorative Palm Icon"
               className="h-8 w-8 mx-auto"
             />
-            <p className="mt-2 text-xs font-[var(--font-teachers)] uppercase tracking-widest text-stone-600">
+            <p className="mt-2 text-xs font-teachers uppercase tracking-widest text-stone-600">
               Our Tours
             </p>
           </div>
@@ -84,9 +48,7 @@ const CuratedToursSection = () => {
 
         {/* CTA Button */}
         <div className="mt-20 text-center">
-          <button className="px-8 py-3 text-xs font-sans font-semibold tracking-widest uppercase border border-[var-(-color-brand-accent)] text-[var(--color-brand-accent)] hover:bg-stone-700 hover:text-white transition-colors duration-300">
-            Plan Your Experience
-          </button>
+          <Button buttonText="Plan Your Experience" className="px-8 py-3 text-xs font-sans uppercase" />
         </div>
       </div>
     </section>

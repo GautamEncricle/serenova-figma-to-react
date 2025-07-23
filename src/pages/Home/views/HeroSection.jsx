@@ -39,6 +39,7 @@ const HeroSection = () => {
         className="absolute hidden md:block scale-y-[-1] bottom-[-68px] left-[-142px] w-[200px] md:bottom-[-200px] md:-left-18 rotate-200 md:w-100 h-100 bg-no-repeat bg-contain opacity-20"
         style={{ backgroundImage: "var(--leaf-bg-url)" }}
       ></div>
+      
       <div className="w-full max-w-7xl mx-auto">
         <div className="lg:hidden">
           <div className="text-center text-black mb-8">

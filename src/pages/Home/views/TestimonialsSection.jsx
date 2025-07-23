@@ -1,39 +1,11 @@
 import React, { useRef } from "react";
+import TestimonialCard from "../../../components/cards/TestimonialCard";
 
-// --- Assets ---
 const leafBgPattern = "./src/assets/images/icons/offers/leafBg.svg";
-const leafCardPattern = "./src/assets/images/icons/leaf-card.svg";
-const quoteIcon = "./src/assets/images/icons/quotes.svg";
 const tree = "./src/assets/images/icons/tree.svg";
 
 import { testimonials } from "../../../constants/data";
 
-// --- Testimonial Card Component ---
-const TestimonialCard = ({ quote, author, location }) => (
-  <div className="relative bg-cream-medium p-8 rounded-md w-[320px] md:w-[380px] 2xl:w-[444px] shrink-0 mr-6 min-h-[342px] flex flex-col justify-between">
-    {/* Quote Icon */}
-    <img
-      src={quoteIcon}
-      alt="Quote"
-      className="absolute top-6 left-6 w-15 h-15 opacity-80"
-    />
-
-    <div
-      className="absolute bottom-4 -rotate-10 -right-3 w-30 h-30 bg-no-repeat bg-contain opacity-60"
-      style={{ backgroundImage: `url(${leafCardPattern})` }}
-    ></div>
-
-    {/* Content */}
-    <div className="relative z-10 flex-1 flex flex-col justify-between mt-12">
-      <p className="text-gray font-sans">{quote}</p>
-      <p className="font-semibold font-teachers text-gray-800 mt-6">
-        {author}, <span>{location}</span>
-      </p>
-    </div>
-  </div>
-);
-
-// --- Testimonials Section ---
 const TestimonialsSection = () => {
   const scrollRef = useRef(null);
 
@@ -92,13 +64,13 @@ const TestimonialsSection = () => {
       <div className="flex justify-center items-center gap-3 mt-8">
         <button
           onClick={() => scroll("left")}
-          className="bg-gray-200/70 hover:bg-gray-300 transition-colors w-12 h-12 rounded-md flex items-center justify-center text-2xl font-mono"
+          className="bg-gray-200/70 hover:bg-gray-300 transition-colors cursor-pointer w-12 h-12 rounded-md flex items-center justify-center text-2xl font-mono"
         >
           ←
         </button>
         <button
           onClick={() => scroll("right")}
-          className="bg-[#B9A98A] hover:bg-[#a9997a] transition-colors text-white w-12 h-12 rounded-md flex items-center justify-center text-2xl font-mono"
+          className="bg-[#B9A98A] hover:bg-[#a9997a] transition-colors cursor-pointer text-white w-12 h-12 rounded-md flex items-center justify-center text-2xl font-mono"
         >
           →
         </button>

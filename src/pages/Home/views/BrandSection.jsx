@@ -5,9 +5,7 @@ import dust from "../../../assets/images/icons/Dust.svg";
 import { logos } from "../../../constants/data";
 
 const BrandsSection = () => {
-  // An array of logo objects to make the component easy to update and manage.
   return (
-    // The main container for the section.
     <div
       style={{ backgroundImage: `url(${dust})` }}
       className="bg-no-repeat bg-cover bg-center bg-cream-medium"

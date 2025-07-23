@@ -1,21 +1,12 @@
 import React, { useState } from "react";
-// Make sure to have your logo file in your project, e.g., in the `src/assets` folder
 import Logo from "../assets/images/Logo.svg";
+
+import { navLinks } from "../constants/data";
+
+import Button from "../components/ui/Button";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const navLinks = [
-    { title: "Home", url: "#home", active: true },
-    { title: "About Us", url: "#about" },
-    { title: "Accommodation", url: "#accommodation" },
-    { title: "Offers & Packages", url: "#offers" },
-    { title: "Wellness & Spa", url: "#spa" },
-    { title: "Events", url: "#events" },
-    { title: "Facilities", url: "#facilities" },
-    { title: "Gallery", url: "#gallery" },
-    { title: "Contact Us", url: "#contact" },
-  ];
 
   return (
     <header className="bg-cream font-sans relative top-0 z-50">
@@ -56,9 +47,10 @@ const Header = () => {
           </div>
 
           <div className="flex items-center right-0 absolute">
-            <button className="hidden lg:block bg-transparent p-2 border border-brand-accent text-brand-accent hover:bg-stone-700 hover:text-white transition-colors duration-300">
+            {/* <button className="hidden lg:block bg-transparent p-2 border border-brand-accent text-brand-accent hover:bg-stone-700 hover:text-white transition-colors duration-300">
               BOOK NOW
-            </button>
+            </button> */}
+            <Button buttonText="BOOK NOW" className="hidden lg:block p-2" />
           </div>
         </div>
       </div>

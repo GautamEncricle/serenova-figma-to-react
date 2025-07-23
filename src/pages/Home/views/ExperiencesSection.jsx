@@ -10,6 +10,8 @@ import checkIcon from "../../../assets/images/icons/check.svg";
 
 import dust from "../../../assets/images/icons/Dust.svg";
 
+import Button from "../../../components/ui/Button";
+
 import { experiences } from "../../../constants/data";
 const ExperiencesSection = () => {
   return (
@@ -107,9 +109,7 @@ const ExperiencesSection = () => {
 
             {/* Action Button */}
             <div className="mt-10">
-              <button className="px-8 py-3 text-xs font-sans font-semibold tracking-widest uppercase border border-stone-400 text-stone-600 hover:bg-stone-700 hover:text-white transition-colors duration-300">
-                See Experiences
-              </button>
+              <Button buttonText="See Experiences" />
             </div>
           </div>
         </div>

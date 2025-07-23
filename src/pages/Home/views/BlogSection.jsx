@@ -6,6 +6,8 @@ const treeIcon = "./src/assets/images/icons/tree.svg";
 
 import { blogPosts } from "../../../constants/data";
 
+import Button from "../../../components/ui/Button";
+
 const BlogPostCard = ({ post }) => {
   return (
     <div className="group cursor-pointer">
@@ -92,9 +94,7 @@ const BlogSection = () => {
         </div>
 
         <div className="text-center mt-16">
-          <button className="font-semibold bg-transparent p-2 border-2 border-brand-accent text-brand-accent hover:bg-stone-700 hover:text-white transition-colors duration-300">
-            Browse the Journal
-          </button>
+          <Button buttonText="Browse the Journal" />
         </div>
       </div>
     </section>

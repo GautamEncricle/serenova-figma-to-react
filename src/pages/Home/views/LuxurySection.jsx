@@ -37,10 +37,10 @@ const LuxurySection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-transparent border font-semibold border-white text-white py-3 px-10 uppercase tracking-wider text-sm hover:bg-white hover:text-black transition duration-300">
+          <button className="bg-transparent border font-semibold border-white text-white cursor-pointer py-3 px-10 uppercase tracking-wider text-sm hover:bg-white hover:text-black transition duration-300">
             Make a Booking
           </button>
-          <button className="bg-white font-semibold text-dark py-3 px-10 uppercase tracking-wider text-sm hover:bg-transparent hover:text-white border border-white transition duration-300">
+          <button className="bg-white font-semibold text-dark py-3 px-10 uppercase cursor-pointer tracking-wider text-sm hover:bg-transparent hover:text-white border border-white transition duration-300">
             Enquire Now
           </button>
         </div>
