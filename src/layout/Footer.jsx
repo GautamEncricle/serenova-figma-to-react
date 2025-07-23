@@ -1,14 +1,14 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-const leafBg = "./src/assets/images/icons/palmLeafBg.svg";
+import leafBg from '../assets/images/icons/palmLeafBg.svg';
 
-const paperPlaneIcon = "./src/assets/images/icons/social/paper-plane-icon.svg";
-const sendIcon = "./src/assets/images/icons/social/send-icon.svg";
-const facebookIcon = "./src/assets/images/icons/social/facebook-icon.svg";
-const twitterIcon = "./src/assets/images/icons/social/twitter-x-icon.svg";
-const instagramIcon = "./src/assets/images/icons/social/instagram-icon.svg";
-const linkedInIcon = "./src/assets/images/icons/social/linkedin-icon.svg";
+import paperPlaneIcon from '../assets/images/icons/social/paper-plane-icon.svg';
+import sendIcon from '../assets/images/icons/social/send-icon.svg';
+import facebookIcon from '../assets/images/icons/social/facebook-icon.svg';
+import twitterIcon from '../assets/images/icons/social/twitter-x-icon.svg'; 
+import instagramIcon from '../assets/images/icons/social/instagram-icon.svg';
+import linkedInIcon from '../assets/images/icons/social/linkedin-icon.svg';
 
 const Footer = () => {
   const marqueeText = "Serenova The Luxury Stay.";

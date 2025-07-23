@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import TestimonialCard from "../../../components/cards/TestimonialCard";
 
-const leafBgPattern = "./src/assets/images/icons/offers/leafBg.svg";
-const tree = "./src/assets/images/icons/tree.svg";
+import leafBgPattern from "./../../../assets/images/icons/offers/leafBg.svg";
+import tree from "./../../../assets/images/icons/tree.svg";
 
 import { testimonials } from "../../../constants/data";
 
@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
   return (
     <section
       className="relative bg-cream py-20 px-4 sm:px-6 lg:px-8 overflow-hidden font-teachers"
-      style={{ "--leaf-bg-url": `url(${leafBgPattern})` }}
+      style={{ "--leaf-bg-url": `url("${leafBgPattern}")` }}
     >
       {/* Decorative Leaf Background */}
       <div

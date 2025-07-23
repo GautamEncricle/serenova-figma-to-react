@@ -16,7 +16,7 @@ import { experiences } from "../../../constants/data";
 const ExperiencesSection = () => {
   return (
     <section
-      style={{ backgroundImage: `url(${dust})` }}
+      style={{ backgroundImage: `url("${dust}")` }}
       className="bg-no-repeat bg-cover bg-center bg-cream-medium relative py-16 md:py-24 lg:py-32 overflow-hidden"
     >
       {/* Decorative Background Elements */}

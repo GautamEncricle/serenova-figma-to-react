@@ -11,7 +11,7 @@ import { toursData } from "../../../constants/data";
 const CuratedToursSection = () => {
   return (
     <section
-      style={{ backgroundImage: `url(${dust})` }}
+      style={{ backgroundImage: `url("${dust}")` }}
       className="bg-no-repeat bg-cover bg-center bg-cream-medium font-teachers py-20 md:py-28 relative overflow-hidden"
     >
       {/* Decorative Background Palm Leaf */}

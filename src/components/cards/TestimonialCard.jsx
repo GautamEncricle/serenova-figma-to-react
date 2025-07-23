@@ -1,5 +1,7 @@
-const leafCardPattern = "./src/assets/images/icons/leaf-card.svg";
-const quoteIcon = "./src/assets/images/icons/quotes.svg";
+// const leafCardPattern = "./src/assets/images/icons/leaf-card.svg";
+import leafCardPattern from '../../assets/images/icons/leaf-card.svg';
+import quoteIcon from '../../assets/images/icons/quotes.svg';
+// const quoteIcon = "./src/assets/images/icons/quotes.svg";
 
 const TestimonialCard = ({ quote, author, location }) => (
     <div className="relative bg-cream-medium p-8 rounded-md w-[320px] md:w-[380px] 2xl:w-[444px] shrink-0 mr-6 min-h-[342px] flex flex-col justify-between">
@@ -12,7 +14,7 @@ const TestimonialCard = ({ quote, author, location }) => (
 
         <div
             className="absolute bottom-4 -rotate-10 -right-3 w-30 h-30 bg-no-repeat bg-contain opacity-60"
-            style={{ backgroundImage: `url(${leafCardPattern})` }}
+            style={{ backgroundImage: `url("${leafCardPattern}")` }}
         ></div>
 
         {/* Content */}

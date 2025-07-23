@@ -2,20 +2,19 @@ import React from "react";
 
 import Button from "../../../components/ui/Button";
 
-const leafBg = "./src/assets/images/icons/offers/leafBg.svg";
-const umbrellaBg = "./src/assets/images/icons/offers/umbrellaBg.svg";
-const tree = "./src/assets/images/icons/tree.svg";
-const beachChairImg = "./src/assets/images/Home/offer/beach-chair-image.png";
-const birdcageChairsImg =
-  "./src/assets/images/Home/offer/birdcage-chairs-image.png";
+import leafBg from '../../../assets/images/icons/offers/leafBg.svg'
+import umbrellaBg from '../../../assets/images/icons/offers/umbrellaBg.svg'
+import tree from '../../../assets/images/icons/tree.svg'
+import beachChairImg from '../../../assets/images/Home/offer/beach-chair-image.png'
+import birdcageChairsImg from '../../../assets/images/Home/offer/birdcage-chairs-image.png'
 
 const OfferSection = () => {
   return (
     <section
       className="relative bg-cream md:h-[900px] py-10 overflow-hidden"
       style={{
-        "--leaf-bg-url": `url(${leafBg})`,
-        "--umbrella-bg-url": `url(${umbrellaBg})`,
+        "--leaf-bg-url": `url("${leafBg}")`,
+        "--umbrella-bg-url": `url("${umbrellaBg}")`,
       }}
     >
       <div
@@ -57,6 +56,9 @@ const OfferSection = () => {
             give you more. More stillness. More time. More unforgettable
             experiences.
           </p>
+          {/* <button className="mt-8 bg-transparent p-2 border border-brand-accent text-brand-accent cursor-pointer hover:bg-stone-700 hover:text-white transition-colors duration-300 translate-x-2/3 md:translate-0">
+            VIEW ALL OFFERS
+          </button> */}
           <Button buttonText="VIEW ALL OFFERS" className="mt-8 uppercase translate-x-2/3 md:translate-0" />
         </div>
 

@@ -9,7 +9,7 @@ import Button from "../../../components/ui/Button";
 const AboutUsSection = () => {
   return (
     <section
-      style={{ backgroundImage: `url(${dust})` }}
+      style={{ backgroundImage: `url("${dust}")` }}
       className="bg-no-repeat bg-cover bg-center bg-cream-medium font-teachers relative overflow-x-clip"
     >
       <img

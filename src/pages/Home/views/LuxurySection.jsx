@@ -1,7 +1,7 @@
 import React from "react";
 
-const heroBgImage = "./src/assets/images/Home/luxury/luxury.png";
-const treeWhite = "./src/assets/images/icons/tree-white.svg";
+import heroBgImage from '../../../assets/images/Home/luxury/luxury.png';
+import treeWhite from '../../../assets/images/icons/tree-white.svg';
 
 const LuxurySection = () => {
   return (

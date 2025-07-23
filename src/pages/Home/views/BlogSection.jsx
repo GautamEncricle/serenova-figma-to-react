@@ -1,12 +1,12 @@
 import React from "react";
+import Button from "../../../components/ui/Button";
 
-const leafBgTopLeft = "./src/assets/images/icons/palmLeafBg.svg";
-const leafBgBottomRight = "./src/assets/images/icons/logo-vector.svg";
-const treeIcon = "./src/assets/images/icons/tree.svg";
+import leafBgTopLeft from '../../../assets/images/icons/palmLeafBg.svg';
+import leafBgBottomRight from '../../../assets/images/icons/logo-vector.svg';
+import treeIcon from '../../../assets/images/icons/tree.svg';
 
 import { blogPosts } from "../../../constants/data";
 
-import Button from "../../../components/ui/Button";
 
 const BlogPostCard = ({ post }) => {
   return (
@@ -54,8 +54,8 @@ const BlogSection = () => {
     <section
       className="relative bg-cream py-20 px-4 sm:px-6 lg:px-8 overflow-hidden font-teacher"
       style={{
-        "--leaf-bg-tl-url": `url(${leafBgTopLeft})`,
-        "--leaf-bg-br-url": `url(${leafBgBottomRight})`,
+        "--leaf-bg-tl-url": `url("${leafBgTopLeft}")`,
+        "--leaf-bg-br-url": `url("${leafBgBottomRight}")`,
       }}
     >
       {/* Decorative Background Images */}
