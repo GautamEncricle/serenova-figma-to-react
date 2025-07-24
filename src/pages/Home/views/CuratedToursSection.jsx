@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import useFetchData from '../../../hooks/useFetchData';
+import useFetchData from "../../../hooks/useFetchData";
 
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
-import Button from '../../../components/ui/Button';
-import TourCard from '../../../components/cards/TourCard';
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
+import Button from "../../../components/ui/Button";
+import TourCard from "../../../components/cards/TourCard";
 
 export default function CuratedToursSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const tours = data?.tours || {};
   const tourItems = tours.items || [];
 
@@ -45,10 +45,7 @@ export default function CuratedToursSection() {
           {/* Tours Grid */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {tourItems.map((tour, index) => (
-              <TourCard
-                key={index}
-                tour = {tour}
-              />
+              <TourCard key={index} tour={tour} />
             ))}
           </div>
 

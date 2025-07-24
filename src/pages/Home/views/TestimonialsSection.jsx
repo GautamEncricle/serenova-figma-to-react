@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useRef } from 'react';
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
-import TestimonialCard from '../../../components/cards/TestimonialCard';
+import React, { useRef } from "react";
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
+import TestimonialCard from "../../../components/cards/TestimonialCard";
 
 export default function TestimonialsSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const testimonial = data?.testimonials || {};
   const testimonials = testimonial.items || [];
 
@@ -17,8 +17,8 @@ export default function TestimonialsSection() {
     const isMobile = window.innerWidth <= 768;
     const offset = isMobile ? 350 : 1120;
     scrollRef.current.scrollBy({
-      left: direction === 'left' ? -offset : offset,
-      behavior: 'smooth',
+      left: direction === "left" ? -offset : offset,
+      behavior: "smooth",
     });
   };
 
@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
     <AsyncWrapper loading={loading} error={error} retry={refetch}>
       <section
         className="relative bg-cream py-20 px-4 sm:px-6 lg:px-8 overflow-hidden font-teachers"
-        style={{ '--leaf-bg-url': `url("${testimonial.leafBg}")` }}
+        style={{ "--leaf-bg-url": `url("${testimonial.leafBg}")` }}
       >
         {/* Decorative Leaf Background */}
         <div
@@ -54,10 +54,7 @@ export default function TestimonialsSection() {
             ref={scrollRef}
           >
             {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                testimonial={testimonial}
-              />
+              <TestimonialCard key={index} testimonial={testimonial} />
             ))}
           </div>
         </div>
@@ -65,13 +62,13 @@ export default function TestimonialsSection() {
         {/* Scroll Arrows */}
         <div className="flex justify-center items-center gap-3 mt-8">
           <button
-            onClick={() => scroll('left')}
+            onClick={() => scroll("left")}
             className="bg-gray-200/70 hover:bg-gray-300 transition-colors cursor-pointer w-12 h-12 rounded-md flex items-center justify-center text-2xl font-mono"
           >
             ←
           </button>
           <button
-            onClick={() => scroll('right')}
+            onClick={() => scroll("right")}
             className="bg-[#B9A98A] hover:bg-[#a9997a] transition-colors cursor-pointer text-white w-12 h-12 rounded-md flex items-center justify-center text-2xl font-mono"
           >
             →

@@ -1,450 +1,447 @@
 {
-    "footer": {
-        "marqueeText": "Serenova The Luxury Stay.",
-        "background": "/assets/images/icons/palmLeafBg.svg",
-        "newsletter": {
-            "icon": "/assets/images/icons/social/paper-plane-icon.svg",
-            "placeholder": "Enter Your Email Address",
-            "buttonIcon": "/assets/images/icons/social/send-icon.svg",
-            "buttonText": "Subscribe",
-            "heading": "Get the best blog stories into your inbox!",
-            "privacyPolicy": {
-                "label": "I agree to the",
-                "linkText": "Privacy Policy",
-                "linkUrl": "/privacy-policy"
-            }
-        },
-        "copyright": "© 2025 Serenova. All rights reserved.",
-        "links": [
-            {
-                "label": "Home",
-                "url": "/"
-            },
-            {
-                "label": "Accommodation",
-                "url": "/accommodation"
-            },
-            {
-                "label": "Offers & Packages",
-                "url": "/offers"
-            },
-            {
-                "label": "Events",
-                "url": "/events"
-            },
-            {
-                "label": "Facilities",
-                "url": "/facilities"
-            },
-            {
-                "label": "Contact us",
-                "url": "/contact"
-            }
-        ],
-        "socials": [
-            {
-                "name": "Facebook",
-                "icon": "/assets/images/icons/social/facebook-icon.svg",
-                "url": "#"
-            },
-            {
-                "name": "Twitter",
-                "icon": "/assets/images/icons/social/twitter-x-icon.svg",
-                "url": "#"
-            },
-            {
-                "name": "Instagram",
-                "icon": "/assets/images/icons/social/instagram-icon.svg",
-                "url": "#"
-            },
-            {
-                "name": "LinkedIn",
-                "icon": "/assets/images/icons/social/linkedin-icon.svg",
-                "url": "#"
-            }
-        ]
+  "footer": {
+    "marqueeText": "Serenova The Luxury Stay.",
+    "background": "/assets/images/icons/palmLeafBg.svg",
+    "newsletter": {
+      "icon": "/assets/images/icons/social/paper-plane-icon.svg",
+      "placeholder": "Enter Your Email Address",
+      "buttonIcon": "/assets/images/icons/social/send-icon.svg",
+      "buttonText": "Subscribe",
+      "heading": "Get the best blog stories into your inbox!",
+      "privacyPolicy": {
+        "label": "I agree to the",
+        "linkText": "Privacy Policy",
+        "linkUrl": "/privacy-policy"
+      }
     },
-    "header": {
-        "logo": "/assets/images/Logo.svg",
-        "buttonText": "BOOK NOW",
-        "navLinks": [
-            {
-                "title": "Home",
-                "url": "#home",
-                "active": true
-            },
-            {
-                "title": "About Us",
-                "url": "#about"
-            },
-            {
-                "title": "Accommodation",
-                "url": "#accommodation"
-            },
-            {
-                "title": "Offers & Packages",
-                "url": "#offers"
-            },
-            {
-                "title": "Wellness & Spa",
-                "url": "#spa"
-            },
-            {
-                "title": "Events",
-                "url": "#events"
-            },
-            {
-                "title": "Facilities",
-                "url": "#facilities"
-            },
-            {
-                "title": "Gallery",
-                "url": "#gallery"
-            },
-            {
-                "title": "Contact Us",
-                "url": "#contact"
-            }
-        ]
-    },
-    "home": {
-        "hero": {
-            "title": "Let the Ocean",
-            "subtitle": "Slow You Down",
-            "description": "For the ultimate getaway",
-            "leafIcon": "/assets/images/icons/leaf.svg",
-            "leafBg": "/assets/images/icons/tree.svg",
-            "images": {
-                "bedroom": {
-                    "src": "/assets/images/Home/hero/image1.png",
-                    "alt": "Bedroom with ocean view"
-                },
-                "paddleboard": {
-                    "src": "/assets/images/Home/hero/image2.png",
-                    "alt": "Person on paddleboard"
-                },
-                "boardwalk": {
-                    "src": "/assets/images/Home/hero/image3.png",
-                    "alt": "Boardwalk at sunset"
-                },
-                "poolWoman": {
-                    "src": "/assets/images/Home/hero/image4.png",
-                    "alt": "Woman by the pool"
-                },
-                "beachChairs": {
-                    "src": "/assets/images/Home/hero/image5.png",
-                    "alt": "Beach chairs and umbrella"
-                },
-                "aerialIslands": {
-                    "src": "/assets/images/Home/hero/image6.png",
-                    "alt": "Aerial view of islands"
-                }
-            }
+    "copyright": "© 2025 Serenova. All rights reserved.",
+    "links": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "Accommodation",
+        "url": "/accommodation"
+      },
+      {
+        "label": "Offers & Packages",
+        "url": "/offers"
+      },
+      {
+        "label": "Events",
+        "url": "/events"
+      },
+      {
+        "label": "Facilities",
+        "url": "/facilities"
+      },
+      {
+        "label": "Contact us",
+        "url": "/contact"
+      }
+    ],
+    "socials": [
+      {
+        "name": "Facebook",
+        "icon": "/assets/images/icons/social/facebook-icon.svg",
+        "url": "#"
+      },
+      {
+        "name": "Twitter",
+        "icon": "/assets/images/icons/social/twitter-x-icon.svg",
+        "url": "#"
+      },
+      {
+        "name": "Instagram",
+        "icon": "/assets/images/icons/social/instagram-icon.svg",
+        "url": "#"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "/assets/images/icons/social/linkedin-icon.svg",
+        "url": "#"
+      }
+    ]
+  },
+  "header": {
+    "logo": "/assets/images/Logo.svg",
+    "buttonText": "BOOK NOW",
+    "navLinks": [
+      {
+        "title": "Home",
+        "url": "#home",
+        "active": true
+      },
+      {
+        "title": "About Us",
+        "url": "#about"
+      },
+      {
+        "title": "Accommodation",
+        "url": "#accommodation"
+      },
+      {
+        "title": "Offers & Packages",
+        "url": "#offers"
+      },
+      {
+        "title": "Wellness & Spa",
+        "url": "#spa"
+      },
+      {
+        "title": "Events",
+        "url": "#events"
+      },
+      {
+        "title": "Facilities",
+        "url": "#facilities"
+      },
+      {
+        "title": "Gallery",
+        "url": "#gallery"
+      },
+      {
+        "title": "Contact Us",
+        "url": "#contact"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "title": "Let the Ocean",
+      "subtitle": "Slow You Down",
+      "description": "For the ultimate getaway",
+      "leafIcon": "/assets/images/icons/leaf.svg",
+      "leafBg": "/assets/images/icons/tree.svg",
+      "images": {
+        "bedroom": {
+          "src": "/assets/images/Home/hero/image1.png",
+          "alt": "Bedroom with ocean view"
         },
-        "services": {
-            "title": "What Makes Serenova Exceptional",
-            "subtitle": "Our Services",
-            "icon": "/assets/images/icons/tree.svg",
-            "items": [
-                {
-                    "title": "Privacy & exclusivity",
-                    "description": "Enjoy peaceful moments in secluded settings, curated for those who value space, silence, and sophistication.",
-                    "icon": "/assets/images/icons/services/privacy.svg"
-                },
-                {
-                    "title": "Personalized service",
-                    "description": "From arrival to farewell, every detail is tailored to your preferences by our attentive, discreet staff.",
-                    "icon": "/assets/images/icons/services/personalize.svg",
-                    "isHighlighted": true
-                },
-                {
-                    "title": "Luxury accommodation",
-                    "description": "Stay in refined villas and suites designed with nature, comfort, and quiet luxury at their heart.",
-                    "icon": "/assets/images/icons/services/luxury.svg"
-                }
-            ]
+        "paddleboard": {
+          "src": "/assets/images/Home/hero/image2.png",
+          "alt": "Person on paddleboard"
         },
-        "about": {
-            "sectionLabel": "About Us",
-            "icon": "/assets/images/icons/tree.svg",
-            "backgroundImage": "/assets/images/icons/Dust.svg",
-            "topLeaf": "/assets/images/icons/palmLeafBg.svg",
-            "title": "A Place Where Luxury Comes Gently And Every Stay Feels Like Coming Home Crafted For The Soul.",
-            "emphasisWords": [
-                "Luxury",
-                "Soul"
-            ],
-            "description": "Tucked along the quiet coast, Serenova is more than a destination—it’s a philosophy of peace, space, and soulful hospitality. Every corner of our resort is shaped by the rhythm of nature and the comforts of curated design. Whether you’re watching the sunrise from your private deck or dining under the stars, Serenova offers something rare: the freedom to truly unwind. We are more than a resort; Serenova is a mood, a moment, a memory in the making. And once you’ve experienced it, you’ll carry its calm with you long after you’ve returned home."
+        "boardwalk": {
+          "src": "/assets/images/Home/hero/image3.png",
+          "alt": "Boardwalk at sunset"
         },
-        "experience": {
-            "icon": "/assets/images/icons/tree.svg",
-            "background": "/assets/images/icons/Dust.svg",
-            "bgPalm": "/assets/images/icons/tree1.svg",
-            "bgBirds": "/assets/images/icons/birds.svg",
-            "images": [
-                {
-                    "src": "/assets/images/Home/experience/image2.png",
-                    "alt": "A tropical beach seen from inside a seaside cave"
-                },
-                {
-                    "src": "/assets/images/Home/experience/image1.png",
-                    "alt": "A woman in a yellow dress overlooking a tropical bay"
-                }
-            ],
-            "playIcon": "/assets/images/icons/play.svg",
-            "checkIcon": "/assets/images/icons/check.svg",
-            "sectionLabel": "The Best Of The Best",
-            "title": "Experiences That Move You",
-            "description": "Whether you’re sailing across the horizon or exploring quiet coastal trails, our curated experiences invite you to slow down or seek out something new.",
-            "list": [
-                "Sunset catamaran cruises",
-                "Guided cultural excursions",
-                "Coastal nature treks",
-                "Mountain biking adventures",
-                "Scuba diving expeditions"
-            ]
+        "poolWoman": {
+          "src": "/assets/images/Home/hero/image4.png",
+          "alt": "Woman by the pool"
         },
-        "brands": {
-            "background": "/assets/images/icons/Dust.svg",
-            "logos": [
-                {
-                    "name": "Mountaineer Casino",
-                    "src": "/assets/images/Home/brand/image1.svg"
-                },
-                {
-                    "name": "Tripadvisor",
-                    "src": "/assets/images/Home/brand/image2.svg"
-                },
-                {
-                    "name": "Diani Sea Resort",
-                    "src": "/assets/images/Home/brand/image3.svg"
-                },
-                {
-                    "name": "Le Gilmer Beach Resort",
-                    "src": "/assets/images/Home/brand/image4.svg"
-                },
-                {
-                    "name": "My World",
-                    "src": "/assets/images/Home/brand/image5.svg"
-                },
-                {
-                    "name": "Cruise Travel",
-                    "src": "/assets/images/Home/brand/image6.svg"
-                }
-            ]
+        "beachChairs": {
+          "src": "/assets/images/Home/hero/image5.png",
+          "alt": "Beach chairs and umbrella"
         },
-        "tours": {
-            "background": "/assets/images/icons/Dust.svg",
-            "palmLeaf": "/assets/images/icons/palmLeafBg.svg",
-            "icon": "/assets/images/icons/tree.svg",
-            "subtitle": "Our Tours",
-            "title": "Curated Tours for the Curious Soul",
-            "items": [
-                {
-                    "image": "/assets/images/Home/tours/image1.png",
-                    "title": "Coastal Kayaking & Hidden Coves",
-                    "category": "Adventure Tour",
-                    "details": [
-                        {
-                            "label": "Duration",
-                            "value": "Half Day (4 hrs)"
-                        },
-                        {
-                            "label": "Includes",
-                            "value": "Kayak gear"
-                        },
-                        {
-                            "label": "Guide",
-                            "value": "Local marine naturalist"
-                        }
-                    ]
-                },
-                {
-                    "image": "/assets/images/Home/tours/image2.png",
-                    "title": "Hillside Hike & Ocean Vistas",
-                    "category": "Nature Walk",
-                    "details": [
-                        {
-                            "label": "Duration",
-                            "value": "3-5 Hours"
-                        },
-                        {
-                            "label": "Includes",
-                            "value": "Trail snacks, water, guide"
-                        },
-                        {
-                            "label": "Guide",
-                            "value": "Certified eco-hiking expert"
-                        }
-                    ]
-                },
-                {
-                    "image": "/assets/images/Home/tours/image3.png",
-                    "title": "Sacred Temples & Local Traditions",
-                    "category": "Cultural Experience",
-                    "details": [
-                        {
-                            "label": "Duration",
-                            "value": "Full Day (6-7 hrs)"
-                        },
-                        {
-                            "label": "Includes",
-                            "value": "Entry passes, lunch, guide"
-                        },
-                        {
-                            "label": "Guide",
-                            "value": "Local historian & storyteller"
-                        }
-                    ]
-                },
-                {
-                    "image": "/assets/images/Home/tours/image4.png",
-                    "title": "Dolphin Cruise & Marine Discovery",
-                    "category": "Ocean Safari",
-                    "details": [
-                        {
-                            "label": "Duration",
-                            "value": "2.5 Hours"
-                        },
-                        {
-                            "label": "Includes",
-                            "value": "Boat ride, binoculars, snacks"
-                        },
-                        {
-                            "label": "Guide",
-                            "value": "Marine life specialist"
-                        }
-                    ]
-                },
-                {
-                    "image": "/assets/images/Home/tours/image5.png",
-                    "title": "Coastal Flavors Culinary Tour",
-                    "category": "Food & Culture",
-                    "details": [
-                        {
-                            "label": "Duration",
-                            "value": "Half Day (4 hrs)"
-                        },
-                        {
-                            "label": "Includes",
-                            "value": "Cooking class, tasting menu"
-                        },
-                        {
-                            "label": "Guide",
-                            "value": "In-house chef & local farmer"
-                        }
-                    ]
-                },
-                {
-                    "image": "/assets/images/Home/tours/image6.png",
-                    "title": "Sunset Sailing Experience",
-                    "category": "Romantic Escape",
-                    "details": [
-                        {
-                            "label": "Duration",
-                            "value": "2 Hours"
-                        },
-                        {
-                            "label": "Includes",
-                            "value": "Small bites, captain"
-                        },
-                        {
-                            "label": "Guide",
-                            "value": "Private skipper"
-                        }
-                    ]
-                }
-            ]
-        },
-        "offers": {
-            "subtitle": "Offer",
-            "heading": "Reserve Your Stay 30 Days In Advance And Enjoy Exclusive Savings On All Suites And Villas.",
-            "description": "At Serenova, we believe that luxury should arrive gently. That's why our curated offers are designed not just to save you more but to give you more. More stillness. More time. More unforgettable experiences.",
-            "buttonText": "VIEW ALL OFFERS",
-            "icon": "/assets/images/icons/tree.svg",
-            "leafBg": "/assets/images/icons/offers/leafBg.svg",
-            "umbrellaBg": "/assets/images/icons/offers/umbrellaBg.svg",
-            "image1": "/assets/images/Home/offer/beach-chair-image.png",
-            "image2": "/assets/images/Home/offer/birdcage-chairs-image.png"
-        },
-        "luxury": {
-            "background": "/assets/images/Home/luxury/luxury.png",
-            "icon": "/assets/images/icons/tree-white.svg",
-            "subtitle": "Luxury Lifestyle",
-            "title": "The Journey Begins with a Click",
-            "description": "Choose your stay. We'll take care of the rest.",
-            "primaryBtn": "Make a Booking",
-            "secondaryBtn": "Enquire Now"
-        },
-        "testimonials": {
-            "icon": "/assets/images/icons/tree.svg",
-            "leafBg": "/assets/images/icons/offers/leafBg.svg",
-            "subtitle": "Testimonial",
-            "title": "Every Stay Leaves a Story",
-            "items": [
-                {
-                    "quote": "I came to unwind, and I left transformed. Morning yoga by the sea, quiet forest walks, and food that nourished more than my body. Serenova is pure soul therapy. Really I love this place must visit.",
-                    "author": "Talia M.",
-                    "location": "Dubai"
-                },
-                {
-                    "quote": "From our spacious villa to the cultural tours and kind-hearted staff, everything was seamless. My children still talk about the dolphin cruise. We’ll be back—next time, for longer.",
-                    "author": "Ravi N.",
-                    "location": "Bengaluru, India"
-                },
-                {
-                    "quote": "Serenova was a dream come true. The sunsets were breathtaking, and the guided meditation sessions changed my perspective. I never wanted to leave this paradise. I often look for places that breathe inspiration.",
-                    "author": "Clara J.",
-                    "location": "New York, USA"
-                },
-                {
-                    "quote": "Our family found a slice of heaven. The blend of adventure and relaxation was perfect for everyone. From competitive beach games to the serene spa, every moment was magical.",
-                    "author": "Eli & Mara",
-                    "location": "Toronto, Canada"
-                },
-                {
-                    "quote": "It felt like it was just us, the ocean, the silence, the breeze whispering our names. It was the pause we desperately needed.",
-                    "author": "Chen L.",
-                    "location": "Shanghai, China"
-                }
-            ]
-        },
-        "blogs": {
-            "icon": "/assets/images/icons/tree.svg",
-            "leafTopLeft": "/assets/images/icons/palmLeafBg.svg",
-            "leafBottomRight": "/assets/images/icons/logo-vector.svg",
-            "subtitle": "From Our Blog",
-            "title": "The Journal",
-            "items": [
-                {
-                    "image": "/assets/images/Home/blog/image1.png",
-                    "category": "Nature & Stillness",
-                    "title": "5 Simple Rituals to Embrace Slow Living on Vacation",
-                    "date": "July 7, 2025",
-                    "comments": 3
-                },
-                {
-                    "image": "/assets/images/Home/blog/image2.png",
-                    "category": "Coastal Escapes",
-                    "title": "Explore top green destinations in the world",
-                    "date": "June 8, 2025",
-                    "comments": 2
-                },
-                {
-                    "image": "/assets/images/Home/blog/image3.png",
-                    "category": "Design & Atmosphere",
-                    "title": "Top 15 best travel blogs to follow in 2025",
-                    "date": "May 2, 2025",
-                    "comments": 4
-                },
-                {
-                    "image": "/assets/images/Home/blog/image4.png",
-                    "category": "Wellness & Retreats",
-                    "title": "Amazing photos of rare and exotic plants in Africa",
-                    "date": "May 5, 2025",
-                    "comments": 3
-                }
-            ]
+        "aerialIslands": {
+          "src": "/assets/images/Home/hero/image6.png",
+          "alt": "Aerial view of islands"
         }
+      }
+    },
+    "services": {
+      "title": "What Makes Serenova Exceptional",
+      "subtitle": "Our Services",
+      "icon": "/assets/images/icons/tree.svg",
+      "items": [
+        {
+          "title": "Privacy & exclusivity",
+          "description": "Enjoy peaceful moments in secluded settings, curated for those who value space, silence, and sophistication.",
+          "icon": "/assets/images/icons/services/privacy.svg"
+        },
+        {
+          "title": "Personalized service",
+          "description": "From arrival to farewell, every detail is tailored to your preferences by our attentive, discreet staff.",
+          "icon": "/assets/images/icons/services/personalize.svg",
+          "isHighlighted": true
+        },
+        {
+          "title": "Luxury accommodation",
+          "description": "Stay in refined villas and suites designed with nature, comfort, and quiet luxury at their heart.",
+          "icon": "/assets/images/icons/services/luxury.svg"
+        }
+      ]
+    },
+    "about": {
+      "sectionLabel": "About Us",
+      "icon": "/assets/images/icons/tree.svg",
+      "backgroundImage": "/assets/images/icons/Dust.svg",
+      "topLeaf": "/assets/images/icons/palmLeafBg.svg",
+      "title": "A Place Where Luxury Comes Gently And Every Stay Feels Like Coming Home Crafted For The Soul.",
+      "emphasisWords": ["Luxury", "Soul"],
+      "description": "Tucked along the quiet coast, Serenova is more than a destination—it’s a philosophy of peace, space, and soulful hospitality. Every corner of our resort is shaped by the rhythm of nature and the comforts of curated design. Whether you’re watching the sunrise from your private deck or dining under the stars, Serenova offers something rare: the freedom to truly unwind. We are more than a resort; Serenova is a mood, a moment, a memory in the making. And once you’ve experienced it, you’ll carry its calm with you long after you’ve returned home."
+    },
+    "experience": {
+      "icon": "/assets/images/icons/tree.svg",
+      "background": "/assets/images/icons/Dust.svg",
+      "bgPalm": "/assets/images/icons/tree1.svg",
+      "bgBirds": "/assets/images/icons/birds.svg",
+      "images": [
+        {
+          "src": "/assets/images/Home/experience/image2.png",
+          "alt": "A tropical beach seen from inside a seaside cave"
+        },
+        {
+          "src": "/assets/images/Home/experience/image1.png",
+          "alt": "A woman in a yellow dress overlooking a tropical bay"
+        }
+      ],
+      "playIcon": "/assets/images/icons/play.svg",
+      "checkIcon": "/assets/images/icons/check.svg",
+      "sectionLabel": "The Best Of The Best",
+      "title": "Experiences That Move You",
+      "description": "Whether you’re sailing across the horizon or exploring quiet coastal trails, our curated experiences invite you to slow down or seek out something new.",
+      "list": [
+        "Sunset catamaran cruises",
+        "Guided cultural excursions",
+        "Coastal nature treks",
+        "Mountain biking adventures",
+        "Scuba diving expeditions"
+      ]
+    },
+    "brands": {
+      "background": "/assets/images/icons/Dust.svg",
+      "logos": [
+        {
+          "name": "Mountaineer Casino",
+          "src": "/assets/images/Home/brand/image1.svg"
+        },
+        {
+          "name": "Tripadvisor",
+          "src": "/assets/images/Home/brand/image2.svg"
+        },
+        {
+          "name": "Diani Sea Resort",
+          "src": "/assets/images/Home/brand/image3.svg"
+        },
+        {
+          "name": "Le Gilmer Beach Resort",
+          "src": "/assets/images/Home/brand/image4.svg"
+        },
+        {
+          "name": "My World",
+          "src": "/assets/images/Home/brand/image5.svg"
+        },
+        {
+          "name": "Cruise Travel",
+          "src": "/assets/images/Home/brand/image6.svg"
+        }
+      ]
+    },
+    "tours": {
+      "background": "/assets/images/icons/Dust.svg",
+      "palmLeaf": "/assets/images/icons/palmLeafBg.svg",
+      "icon": "/assets/images/icons/tree.svg",
+      "subtitle": "Our Tours",
+      "title": "Curated Tours for the Curious Soul",
+      "items": [
+        {
+          "image": "/assets/images/Home/tours/image1.png",
+          "title": "Coastal Kayaking & Hidden Coves",
+          "category": "Adventure Tour",
+          "details": [
+            {
+              "label": "Duration",
+              "value": "Half Day (4 hrs)"
+            },
+            {
+              "label": "Includes",
+              "value": "Kayak gear"
+            },
+            {
+              "label": "Guide",
+              "value": "Local marine naturalist"
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/Home/tours/image2.png",
+          "title": "Hillside Hike & Ocean Vistas",
+          "category": "Nature Walk",
+          "details": [
+            {
+              "label": "Duration",
+              "value": "3-5 Hours"
+            },
+            {
+              "label": "Includes",
+              "value": "Trail snacks, water, guide"
+            },
+            {
+              "label": "Guide",
+              "value": "Certified eco-hiking expert"
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/Home/tours/image3.png",
+          "title": "Sacred Temples & Local Traditions",
+          "category": "Cultural Experience",
+          "details": [
+            {
+              "label": "Duration",
+              "value": "Full Day (6-7 hrs)"
+            },
+            {
+              "label": "Includes",
+              "value": "Entry passes, lunch, guide"
+            },
+            {
+              "label": "Guide",
+              "value": "Local historian & storyteller"
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/Home/tours/image4.png",
+          "title": "Dolphin Cruise & Marine Discovery",
+          "category": "Ocean Safari",
+          "details": [
+            {
+              "label": "Duration",
+              "value": "2.5 Hours"
+            },
+            {
+              "label": "Includes",
+              "value": "Boat ride, binoculars, snacks"
+            },
+            {
+              "label": "Guide",
+              "value": "Marine life specialist"
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/Home/tours/image5.png",
+          "title": "Coastal Flavors Culinary Tour",
+          "category": "Food & Culture",
+          "details": [
+            {
+              "label": "Duration",
+              "value": "Half Day (4 hrs)"
+            },
+            {
+              "label": "Includes",
+              "value": "Cooking class, tasting menu"
+            },
+            {
+              "label": "Guide",
+              "value": "In-house chef & local farmer"
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/Home/tours/image6.png",
+          "title": "Sunset Sailing Experience",
+          "category": "Romantic Escape",
+          "details": [
+            {
+              "label": "Duration",
+              "value": "2 Hours"
+            },
+            {
+              "label": "Includes",
+              "value": "Small bites, captain"
+            },
+            {
+              "label": "Guide",
+              "value": "Private skipper"
+            }
+          ]
+        }
+      ]
+    },
+    "offers": {
+      "subtitle": "Offer",
+      "heading": "Reserve Your Stay 30 Days In Advance And Enjoy Exclusive Savings On All Suites And Villas.",
+      "description": "At Serenova, we believe that luxury should arrive gently. That's why our curated offers are designed not just to save you more but to give you more. More stillness. More time. More unforgettable experiences.",
+      "buttonText": "VIEW ALL OFFERS",
+      "icon": "/assets/images/icons/tree.svg",
+      "leafBg": "/assets/images/icons/offers/leafBg.svg",
+      "umbrellaBg": "/assets/images/icons/offers/umbrellaBg.svg",
+      "image1": "/assets/images/Home/offer/beach-chair-image.png",
+      "image2": "/assets/images/Home/offer/birdcage-chairs-image.png"
+    },
+    "luxury": {
+      "background": "/assets/images/Home/luxury/luxury.png",
+      "icon": "/assets/images/icons/tree-white.svg",
+      "subtitle": "Luxury Lifestyle",
+      "title": "The Journey Begins with a Click",
+      "description": "Choose your stay. We'll take care of the rest.",
+      "primaryBtn": "Make a Booking",
+      "secondaryBtn": "Enquire Now"
+    },
+    "testimonials": {
+      "icon": "/assets/images/icons/tree.svg",
+      "leafBg": "/assets/images/icons/offers/leafBg.svg",
+      "subtitle": "Testimonial",
+      "title": "Every Stay Leaves a Story",
+      "items": [
+        {
+          "quote": "I came to unwind, and I left transformed. Morning yoga by the sea, quiet forest walks, and food that nourished more than my body. Serenova is pure soul therapy. Really I love this place must visit.",
+          "author": "Talia M.",
+          "location": "Dubai"
+        },
+        {
+          "quote": "From our spacious villa to the cultural tours and kind-hearted staff, everything was seamless. My children still talk about the dolphin cruise. We’ll be back—next time, for longer.",
+          "author": "Ravi N.",
+          "location": "Bengaluru, India"
+        },
+        {
+          "quote": "Serenova was a dream come true. The sunsets were breathtaking, and the guided meditation sessions changed my perspective. I never wanted to leave this paradise. I often look for places that breathe inspiration.",
+          "author": "Clara J.",
+          "location": "New York, USA"
+        },
+        {
+          "quote": "Our family found a slice of heaven. The blend of adventure and relaxation was perfect for everyone. From competitive beach games to the serene spa, every moment was magical.",
+          "author": "Eli & Mara",
+          "location": "Toronto, Canada"
+        },
+        {
+          "quote": "It felt like it was just us, the ocean, the silence, the breeze whispering our names. It was the pause we desperately needed.",
+          "author": "Chen L.",
+          "location": "Shanghai, China"
+        }
+      ]
+    },
+    "blogs": {
+      "icon": "/assets/images/icons/tree.svg",
+      "leafTopLeft": "/assets/images/icons/palmLeafBg.svg",
+      "leafBottomRight": "/assets/images/icons/logo-vector.svg",
+      "subtitle": "From Our Blog",
+      "title": "The Journal",
+      "items": [
+        {
+          "image": "/assets/images/Home/blog/image1.png",
+          "category": "Nature & Stillness",
+          "title": "5 Simple Rituals to Embrace Slow Living on Vacation",
+          "date": "July 7, 2025",
+          "comments": 3
+        },
+        {
+          "image": "/assets/images/Home/blog/image2.png",
+          "category": "Coastal Escapes",
+          "title": "Explore top green destinations in the world",
+          "date": "June 8, 2025",
+          "comments": 2
+        },
+        {
+          "image": "/assets/images/Home/blog/image3.png",
+          "category": "Design & Atmosphere",
+          "title": "Top 15 best travel blogs to follow in 2025",
+          "date": "May 2, 2025",
+          "comments": 4
+        },
+        {
+          "image": "/assets/images/Home/blog/image4.png",
+          "category": "Wellness & Retreats",
+          "title": "Amazing photos of rare and exotic plants in Africa",
+          "date": "May 5, 2025",
+          "comments": 3
+        }
+      ]
     }
+  }
 }

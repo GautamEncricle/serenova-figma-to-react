@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
 
 export default function LuxurySection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const luxury = data?.luxury || {};
 
   return (
@@ -42,10 +42,10 @@ export default function LuxurySection() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-transparent border font-semibold border-white text-white cursor-pointer py-3 px-10 uppercase tracking-wider text-sm hover:bg-white hover:text-black transition duration-300">
-              {luxury.primaryBtn || 'Make a Booking'}
+              {luxury.primaryBtn || "Make a Booking"}
             </button>
             <button className="bg-white font-semibold text-dark py-3 px-10 uppercase cursor-pointer tracking-wider text-sm hover:bg-transparent hover:text-white border border-white transition duration-300">
-              {luxury.secondaryBtn || 'Enquire Now'}
+              {luxury.secondaryBtn || "Enquire Now"}
             </button>
           </div>
         </div>

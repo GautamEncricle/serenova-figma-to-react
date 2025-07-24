@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function AsyncWrapper({ loading, error, children, retry }) {
   if (loading) {
     return (
@@ -15,14 +17,7 @@ export default function AsyncWrapper({ loading, error, children, retry }) {
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center text-red-600">
           <p className="text-xl">Error loading data: {error}</p>
-          {retry && (
-            <button
-              onClick={retry}
-              className="mt-4 px-4 py-2 bg-olive-600 text-white rounded hover:bg-olive-700"
-            >
-              Retry
-            </button>
-          )}
+          {retry && <Button buttonText="Retry" onClick={retry} />}
         </div>
       </div>
     );

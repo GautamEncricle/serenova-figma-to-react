@@ -15,8 +15,8 @@ export default defineConfig({
     assetsInlineLimit: 0,
     rollupOptions: {
       output: {
-        assetFileNames: '[name][extname]' // no hash
-      }
-    }
-  }
+        assetFileNames: "[name][extname]", // no hash
+      },
+    },
+  },
 });

@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
 
 export default function BrandsSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const brands = data?.brands || {};
   const logos = brands.logos || [];
 

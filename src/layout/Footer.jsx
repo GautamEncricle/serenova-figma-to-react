@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
 import React from "react";
-import useFetchData from '../hooks/useFetchData';
-import AsyncWrapper from '../components/ui/AsyncWrapper';
+import useFetchData from "../hooks/useFetchData";
+import AsyncWrapper from "../components/ui/AsyncWrapper";
 import Marquee from "react-fast-marquee";
 
 const Footer = () => {
-  const { data, loading, error, refetch } = useFetchData('/footer');
+  const { data, loading, error, refetch } = useFetchData("/footer");
   const footer = data || {};
 
   return (
@@ -70,10 +70,17 @@ const Footer = () => {
           </form>
 
           <div className="flex items-center justify-center text-xs text-gray-500">
-            <input type="checkbox" id="privacy" className="w-4 h-4 mr-2 accent-dark-brown" />
+            <input
+              type="checkbox"
+              id="privacy"
+              className="w-4 h-4 mr-2 accent-dark-brown"
+            />
             <label htmlFor="privacy">
               {footer.newsletter?.privacyPolicy?.label}{" "}
-              <a href={footer.newsletter?.privacyPolicy?.linkUrl} className="underline hover:text-black">
+              <a
+                href={footer.newsletter?.privacyPolicy?.linkUrl}
+                className="underline hover:text-black"
+              >
                 {footer.newsletter?.privacyPolicy?.linkText}
               </a>
             </label>
@@ -100,7 +107,11 @@ const Footer = () => {
                   href={social.url}
                   className="w-8 h-8 flex items-center justify-center bg-white rounded-md border border-gray-200"
                 >
-                  <img src={social.icon} alt={social.name} className="w-4 h-4" />
+                  <img
+                    src={social.icon}
+                    alt={social.name}
+                    className="w-4 h-4"
+                  />
                 </a>
               ))}
             </div>

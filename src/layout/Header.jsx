@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
-import useFetchData from '../hooks/useFetchData';
-import AsyncWrapper from '../components/ui/AsyncWrapper';
-import Button from '../components/ui/Button';
+import useFetchData from "../hooks/useFetchData";
+import AsyncWrapper from "../components/ui/AsyncWrapper";
+import Button from "../components/ui/Button";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const { data, loading, error, refetch } = useFetchData('/header');
+  const { data, loading, error, refetch } = useFetchData("/header");
 
   const header = data || {};
   const navLinks = header.navLinks || [];
@@ -32,7 +32,12 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
                 </svg>
               </button>
             </div>
@@ -40,11 +45,7 @@ const Header = () => {
             {/* Logo */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
               <a href="#home" aria-label="Back to homepage">
-                <img
-                  src={header.logo}
-                  alt="Logo"
-                  className="h-25 w-auto"
-                />
+                <img src={header.logo} alt="Logo" className="h-25 w-auto" />
               </a>
             </div>
 
@@ -65,8 +66,11 @@ const Header = () => {
               <li key={index}>
                 <a
                   href={link.url}
-                  className={`pb-2 text-gray-700 transition hover:text-black hover:border-b-2 hover:border-brand-gold ${link.active ? "text-dark-brown font-medium border-b-2 border-brand-gold" : ""
-                    }`}
+                  className={`pb-2 text-gray-700 transition hover:text-black hover:border-b-2 hover:border-brand-gold ${
+                    link.active
+                      ? "text-dark-brown font-medium border-b-2 border-brand-gold"
+                      : ""
+                  }`}
                 >
                   {link.title}
                 </a>
@@ -83,8 +87,9 @@ const Header = () => {
                 <a
                   href={link.url}
                   onClick={() => setIsNavOpen(false)}
-                  className={`pb-2 text-gray-700 transition hover:text-black ${link.active ? "text-black" : ""
-                    }`}
+                  className={`pb-2 text-gray-700 transition hover:text-black ${
+                    link.active ? "text-black" : ""
+                  }`}
                 >
                   {link.title}
                 </a>

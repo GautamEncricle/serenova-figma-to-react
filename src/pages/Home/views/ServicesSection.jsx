@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
-import Button from '../../../components/ui/Button';
-import ServiceCard from '../../../components/cards/ServiceCard';
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
+import Button from "../../../components/ui/Button";
+import ServiceCard from "../../../components/cards/ServiceCard";
 
 export default function ServicesSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const servicesData = data?.services || {};
   const serviceItems = servicesData.items || [];
 
@@ -21,7 +21,9 @@ export default function ServicesSection() {
               alt="Palm Leaf"
               className="w-12 h-auto mb-2 opacity-70"
             />
-            <p className="text-sm text-gray-500 mb-2">{servicesData.subtitle}</p>
+            <p className="text-sm text-gray-500 mb-2">
+              {servicesData.subtitle}
+            </p>
             <h2 className="text-4xl md:text-5xl font-teacher text-dark">
               {servicesData.title}
             </h2>
@@ -40,7 +42,10 @@ export default function ServicesSection() {
 
           {/* Button */}
           <div className="mt-16">
-            <Button buttonText="SEE ALL SERVICES" className="mx-auto uppercase" />
+            <Button
+              buttonText="SEE ALL SERVICES"
+              className="mx-auto uppercase"
+            />
           </div>
         </div>
       </section>

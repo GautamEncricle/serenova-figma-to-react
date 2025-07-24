@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
-import Button from '../../../components/ui/Button';
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
+import Button from "../../../components/ui/Button";
 
 export default function ExperiencesSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const experience = data?.experience || {};
 
   return (
@@ -48,7 +48,11 @@ export default function ExperiencesSection() {
                       aria-label="Play video"
                       className="bg-white p-4 rounded-full transform transition-transform hover:scale-110"
                     >
-                      <img src={experience.playIcon} alt="Play" className="h-5 w-5" />
+                      <img
+                        src={experience.playIcon}
+                        alt="Play"
+                        className="h-5 w-5"
+                      />
                     </button>
                   </div>
                 </div>

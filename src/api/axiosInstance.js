@@ -1,19 +1,19 @@
-import axios from 'axios';
+import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL || 'http:localhost:3000',
+  baseURL: import.meta.env.VITE_BACKEND_URL || "http:localhost:3000",
   timeout: 10000, // 10 seconds timeout
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
 
 export const axiosFileInstance = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL || 'http:localhost:3000',
+  baseURL: import.meta.env.VITE_BACKEND_URL || "http:localhost:3000",
   timeout: 10000, // 10 seconds timeout
   headers: {
-    'Content-Type': 'multipart/form-data',
+    "Content-Type": "multipart/form-data",
   },
-})
+});
 
 export default axiosInstance;

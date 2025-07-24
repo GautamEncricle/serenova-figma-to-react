@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
-import Button from '../../../components/ui/Button';
-import BlogPostCard from '../../../components/cards/BlogPostCard';
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
+import Button from "../../../components/ui/Button";
+import BlogPostCard from "../../../components/cards/BlogPostCard";
 
 export default function BlogSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const blog = data?.blogs || {};
   const blogPosts = blog.items || [];
 
@@ -17,18 +17,18 @@ export default function BlogSection() {
       <section
         className="relative bg-cream py-20 px-4 sm:px-6 lg:px-8 overflow-hidden font-teacher"
         style={{
-          '--leaf-bg-tl-url': `url("${blog.leafTopLeft}")`,
-          '--leaf-bg-br-url': `url("${blog.leafBottomRight}")`,
+          "--leaf-bg-tl-url": `url("${blog.leafTopLeft}")`,
+          "--leaf-bg-br-url": `url("${blog.leafBottomRight}")`,
         }}
       >
         {/* Decorative Background Images */}
         <div
           className="absolute top-10 left-0 rotate-250 scale-y-[-1] w-64 h-64 bg-no-repeat bg-contain opacity-100 -translate-x-1/4 -translate-y-1/4"
-          style={{ backgroundImage: 'var(--leaf-bg-tl-url)' }}
+          style={{ backgroundImage: "var(--leaf-bg-tl-url)" }}
         ></div>
         <div
           className="absolute bottom-[-80px] md:bottom-0 right-0 w-[80px] md:w-40 h-40 bg-no-repeat bg-contain opacity-10"
-          style={{ backgroundImage: 'var(--leaf-bg-br-url)' }}
+          style={{ backgroundImage: "var(--leaf-bg-br-url)" }}
         ></div>
 
         <div className="max-w-7xl mx-auto">

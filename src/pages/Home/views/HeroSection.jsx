@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
 
 const ArrowDownIcon = () => (
   <svg
@@ -20,7 +20,7 @@ const ArrowDownIcon = () => (
 );
 
 export default function HeroSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const hero = data?.hero || {};
   const images = hero.images || {};
 
@@ -28,14 +28,14 @@ export default function HeroSection() {
     <AsyncWrapper loading={loading} error={error} retry={refetch}>
       <section
         style={{
-          '--leaf-bg-url': `url(${hero.leafBg})`,
+          "--leaf-bg-url": `url(${hero.leafBg})`,
         }}
         className="bg-cream w-full font-sans flex items-center justify-center p-4 sm:p-6 lg:p-8"
       >
         {/* Decorative Background Image */}
         <div
           className="absolute hidden md:block scale-y-[-1] bottom-[-68px] left-[-142px] w-[200px] md:bottom-[-600px] 2xl:bottom-[-200px] md:-left-18 rotate-200 md:w-100 h-100 bg-no-repeat bg-contain opacity-20"
-          style={{ backgroundImage: 'var(--leaf-bg-url)' }}
+          style={{ backgroundImage: "var(--leaf-bg-url)" }}
         ></div>
 
         <div className="w-full max-w-7xl mx-auto">
@@ -50,21 +50,53 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src={images.paddleboard?.src} alt={images.paddleboard?.alt} className="rounded-lg w-full h-full object-cover" />
-              <img src={images.bedroom?.src} alt={images.bedroom?.alt} className="rounded-lg w-full h-full object-cover" />
-              <img src={images.poolWoman?.src} alt={images.poolWoman?.alt} className="rounded-lg w-full h-full object-cover" />
-              <img src={images.boardwalk?.src} alt={images.boardwalk?.alt} className="rounded-lg w-full h-full object-cover" />
-              <img src={images.beachChairs?.src} alt={images.beachChairs?.alt} className="rounded-lg w-full h-full object-cover" />
-              <img src={images.aerialIslands?.src} alt={images.aerialIslands?.alt} className="rounded-lg w-full h-full object-cover" />
+              <img
+                src={images.paddleboard?.src}
+                alt={images.paddleboard?.alt}
+                className="rounded-lg w-full h-full object-cover"
+              />
+              <img
+                src={images.bedroom?.src}
+                alt={images.bedroom?.alt}
+                className="rounded-lg w-full h-full object-cover"
+              />
+              <img
+                src={images.poolWoman?.src}
+                alt={images.poolWoman?.alt}
+                className="rounded-lg w-full h-full object-cover"
+              />
+              <img
+                src={images.boardwalk?.src}
+                alt={images.boardwalk?.alt}
+                className="rounded-lg w-full h-full object-cover"
+              />
+              <img
+                src={images.beachChairs?.src}
+                alt={images.beachChairs?.alt}
+                className="rounded-lg w-full h-full object-cover"
+              />
+              <img
+                src={images.aerialIslands?.src}
+                alt={images.aerialIslands?.alt}
+                className="rounded-lg w-full h-full object-cover"
+              />
             </div>
           </div>
 
           {/* Desktop View */}
           <div className="hidden lg:block relative">
             <div className="absolute font-teacher inset-0 z-10 flex flex-col md:-top-40 items-center justify-center text-center text-black pointer-events-none">
-              <img src={hero.leafIcon} alt="Palm leaf icon" className="w-40 h-40" />
-              <h1 className="text-7xl font-thin tracking-wide leading-tight">{hero.title}</h1>
-              <h2 className="text-7xl font-thin tracking-wide leading-tight">{hero.subtitle}</h2>
+              <img
+                src={hero.leafIcon}
+                alt="Palm leaf icon"
+                className="w-40 h-40"
+              />
+              <h1 className="text-7xl font-thin tracking-wide leading-tight">
+                {hero.title}
+              </h1>
+              <h2 className="text-7xl font-thin tracking-wide leading-tight">
+                {hero.subtitle}
+              </h2>
               <p className="mt-8 text-lg">{hero.description}</p>
               <div className="mt-6">
                 <ArrowDownIcon />

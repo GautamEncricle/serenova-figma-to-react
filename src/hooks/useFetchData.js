@@ -1,5 +1,5 @@
-import { useState, useEffect, useCallback } from 'react';
-import axiosInstance from '../api/axiosInstance';
+import { useState, useEffect, useCallback } from "react";
+import axiosInstance from "../api/axiosInstance";
 
 const useFetchData = (endpoint) => {
   const [data, setData] = useState(null);
@@ -13,7 +13,7 @@ const useFetchData = (endpoint) => {
       setData(response.data);
       setError(null);
     } catch (err) {
-      setError(err.message || 'Unknown error');
+      setError(err.message || "Unknown error");
     } finally {
       setLoading(false);
     }

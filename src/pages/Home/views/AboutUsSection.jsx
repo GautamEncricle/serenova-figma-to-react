@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import useFetchData from '../../../hooks/useFetchData';
-import AsyncWrapper from '../../../components/ui/AsyncWrapper';
-import Button from '../../../components/ui/Button';
+import useFetchData from "../../../hooks/useFetchData";
+import AsyncWrapper from "../../../components/ui/AsyncWrapper";
+import Button from "../../../components/ui/Button";
 
 export default function AboutUsSection() {
-  const { data, loading, error, refetch } = useFetchData('/home');
+  const { data, loading, error, refetch } = useFetchData("/home");
   const about = data?.about || {};
 
   return (
@@ -39,14 +39,19 @@ export default function AboutUsSection() {
                 </div>
 
                 <h1 className="mt-6 text-3xl md:text-4xl lg:text-[1.9rem] font-extralight text-gray-500 leading-tight lg:w-auto md:w-full">
-                  {about.title?.split(' ').map((word, idx) => {
-                    const isEmphasized = about.emphasisWords?.includes(word.replace(/[^\w]/g, ''));
+                  {about.title?.split(" ").map((word, idx) => {
+                    const isEmphasized = about.emphasisWords?.includes(
+                      word.replace(/[^\w]/g, ""),
+                    );
                     return isEmphasized ? (
-                      <strong key={idx} className="font-semibold text-stone-800">
-                        {word}{' '}
+                      <strong
+                        key={idx}
+                        className="font-semibold text-stone-800"
+                      >
+                        {word}{" "}
                       </strong>
                     ) : (
-                      word + ' '
+                      word + " "
                     );
                   })}
                 </h1>
