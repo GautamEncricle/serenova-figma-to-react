@@ -1,4 +1,4 @@
-const ServiceCard = ({ icon, title, description }) => {
+const ServiceCard = ({ service }) => {
     return (
         <div className="group relative h-full">
             {/* Border on hover */}
@@ -15,13 +15,19 @@ const ServiceCard = ({ icon, title, description }) => {
             <div className="relative h-full font-teachers border border-gray-300 bg-cream p-8 flex flex-col text-center">
                 <div className="flex-grow">
                     {/* Icon */}
-                    <div className="flex justify-center mb-6">{icon}</div>
+                    <div className="flex justify-center mb-6">
+                        <img
+                            src={service.icon}
+                            alt={service.title + " Icon"}
+                            className="w-12 h-12"
+                        />
+                    </div>
 
                     <h3 className="text-2xl font-teachers font-medium text-brand-accent font-teachers mb-4 group-hover:text-black transition-colors duration-300">
-                        {title}
+                        {service.title}
                     </h3>
                     <p className="text-gray-500 font-sans text-sm leading-relaxed">
-                        {description}
+                        {service.description}
                     </p>
                 </div>
 

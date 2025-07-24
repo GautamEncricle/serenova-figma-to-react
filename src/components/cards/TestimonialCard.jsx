@@ -1,9 +1,7 @@
-// const leafCardPattern = "./src/assets/images/icons/leaf-card.svg";
-import leafCardPattern from '../../assets/images/icons/leaf-card.svg';
-import quoteIcon from '../../assets/images/icons/quotes.svg';
-// const quoteIcon = "./src/assets/images/icons/quotes.svg";
+import leafCardPattern from '/assets/images/icons/leaf-card.svg';
+import quoteIcon from '/assets/images/icons/quotes.svg';
 
-const TestimonialCard = ({ quote, author, location }) => (
+const TestimonialCard = ({ testimonial: { quote, author, location } }) => (
     <div className="relative bg-cream-medium p-8 rounded-md w-[320px] md:w-[380px] 2xl:w-[444px] shrink-0 mr-6 min-h-[342px] flex flex-col justify-between">
         {/* Quote Icon */}
         <img

@@ -1,12 +1,12 @@
-const TourCard = ({ image, title, category, details }) => (
+const TourCard = ({ tour: { image, title, category, details } }) => (
     <div className="bg-cream rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col">
         <img src={image} alt={title} className="w-full h-56 object-cover" />
-        <div className="p-6 flex flex-col flex-grow">
+        <div className="p-6 flex flex-col flex-grow justify-evenly">
             <h3 className="font-teachers font-400">{title}</h3>
             <p className="text-sm text-cream-dark font-sans tracking-wide mt-1">
                 {category}
             </p>
-            <div className="mt-4 pt-4 space-y-3 font-sans text-sm">
+            <div className="mt-4 pt-4 space-y-3 font-sans  text-sm">
                 {details.map((detail, index) =>
                     index === details.length - 1 ? (
                         <div

@@ -10,4 +10,13 @@ export default defineConfig({
     host: true, // or use '0.0.0.0'
     port: 5173,
   },
+  // This is use for stop hash in assets
+  build: {
+    assetsInlineLimit: 0,
+    rollupOptions: {
+      output: {
+        assetFileNames: '[name][extname]' // no hash
+      }
+    }
+  }
 });
